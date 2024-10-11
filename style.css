@@ -1,9 +1,43 @@
 :root {
     font-size: 62.5%;
+
+    --brand-color-light: #60a5fa;
+    --brand-color-dark: #1d4ed8;
+    --bg-color: #0f172a;
+    --stroke-color: #1e293b;
+    --text-color-primary: #f1f5f9;
+    --text-color-secondary: #cbd5e1;
+
+    --font-family: 'Archivo', sans-serif;
+    --h1: 800 2.4rem/135% var(--font-family); /*Shorthand para font-weight, font-size e line-height e fonte-family*/
+    --h2: 800 1.6rem/140% var(--font-family);
+    --h3: 800 1.4rem/140% var(--font-family);
+    --text-span: 600 1.4rem/145% var(--font-family);
+    --text: 400 1.6rem/140% var(--font-family);
+    --text-sm: 400 1.4rem/160% var(--font-family);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    color: var(--text-color-primary);
+    background-color: var(--bg-color);
+    font: var(--text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /*Herda a cor do elemento pai (color do body)*/
+}
+
+a:hover {
+    color: var(--brand-color-light);
+}
+
+h1, h2, h3 {
+    font:inherit;
 }
