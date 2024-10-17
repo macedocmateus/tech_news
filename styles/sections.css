@@ -84,12 +84,15 @@ section header {
         }
     }
 
+}
+
     #ai {
         grid-area: ai;
         img {
             width: 17.6rem;
             aspect-ratio: 1/1;
             object-fit: cover;
+            
         }
 
         h3 {
@@ -114,4 +117,4 @@ section header {
             object-fit: cover;
         }
     }
-}
+
